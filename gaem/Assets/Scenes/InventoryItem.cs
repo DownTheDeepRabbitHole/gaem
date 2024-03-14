@@ -5,6 +5,8 @@ using UnityEngine.EventSystems;
 
 public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
+    Transform parentAfterDrag;
+
     public void OnBeginDrag(PointerEventData eventData)
     {
         throw new System.NotImplementedException();
