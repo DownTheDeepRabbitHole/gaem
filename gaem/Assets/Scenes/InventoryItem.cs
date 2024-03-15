@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
-    Transform parentAfterDrag;
+    public Transform parentAfterDrag;
 
     public void OnBeginDrag(PointerEventData eventData)
     {
