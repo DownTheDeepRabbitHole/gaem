@@ -7,7 +7,14 @@ public class InventorySlot : MonoBehaviour, IDropHandler
 {
     public void OnDrop(PointerEventData eventData)
     {
-        GameObject  dropped = eventData.pointerDrag;
+        if (transform.childCount == 0)//make sure there are only one item per slot
+        { 
+        GameObject dropped = eventData.pointerDrag;
+        InventoryItem draggableItem = dropped.GetComponent<InventoryItem>();
+        draggableItem.parentAfterDrag = transform;
+    }
+        
+
     }
 
     // Start is called before the first frame update
