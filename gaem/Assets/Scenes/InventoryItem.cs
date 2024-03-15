@@ -9,17 +9,21 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        throw new System.NotImplementedException();
+
+        parentAfterDrag = transform.parent;
+        transform.SetParent(transform.root);//sets item as a child of allign inventory
+        transform.SetAsLastSibling();//sets the item as the last item in the canvas family, so it is rendered last
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        transform.position = Input.mousePosition;
+        transform.position = Input.mousePosition;//sets item as mouse position when dragged
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        throw new System.NotImplementedException();
+
+        transform.SetParent(parentAfterDrag);
     }
 
     // Start is called before the first frame update
