@@ -11,7 +11,7 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     {
 
         parentAfterDrag = transform.parent;
-        transform.SetParent(transform.root);//sets item as a child of allign inventory
+        transform.SetParent(transform.root);//sets item as a child of the first item in the family
         transform.SetAsLastSibling();//sets the item as the last item in the canvas family, so it is rendered last
     }
 
