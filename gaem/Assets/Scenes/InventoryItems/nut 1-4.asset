@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7967b6ddb71ab794aab214fc03c3f3cd, type: 3}
   m_Name: nut 1-4
   m_EditorClassIdentifier: 
-  tilebase: {fileID: 0}
+  tilebase: {fileID: 11400000, guid: f094665428c8be24a91e0095d3e938c0, type: 2}
   tile: {fileID: 11400000, guid: f094665428c8be24a91e0095d3e938c0, type: 2}
   image: {fileID: 21300000, guid: 5ee179a84399ead4e8f1b40acbc24474, type: 3}
   stackable: 1
